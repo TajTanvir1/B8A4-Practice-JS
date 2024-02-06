@@ -9,9 +9,13 @@
  */
 
 function matchFinder(string1, string2){
+   if(typeof string1 !== 'string' || typeof string2 !== 'string'){
+      return "Please input a string"
+   }
    const result = string1.includes(string2)
    return result
 }
 
-console.log(matchFinder("John Doe","ohn"));
-console.log(matchFinder("Javascript","code"));
+console.log(16 , matchFinder("John Doe","ohn"));
+console.log(17 , matchFinder("Javascript","code"));
+console.log(18 , matchFinder("Peter Parker",1));
